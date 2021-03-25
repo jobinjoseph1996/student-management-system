@@ -43,9 +43,9 @@ class MarkEntryController extends Controller
         $validate = \Validator::make($request->all(), [
             'student_id'   => 'required',
             'terms'    => 'required',
-            'maths' => 'required',
-            'science'  => 'required',
-            'history'  => 'required'
+            'maths' => 'required|numeric',
+            'science'  => 'required|numeric',
+            'history'  => 'required|numeric'
 	    ]);
 	    if( $validate->fails()){
 	        return redirect()
@@ -109,9 +109,9 @@ class MarkEntryController extends Controller
         $validate = \Validator::make($request->all(), [
             'student_id'   => 'required',
             'terms'    => 'required',
-            'maths' => 'required',
-            'science'  => 'required',
-            'history'  => 'required'
+            'maths' => 'required|numeric',
+            'science'  => 'required|numeric',
+            'history'  => 'required|numeric'
 	    ]);
 	    if( $validate->fails()){
 	        return redirect()
