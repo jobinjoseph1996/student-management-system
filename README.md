@@ -5,3 +5,4 @@
 * create a database with the database name
 * run php artisan migrate
 * run php artisan config:cache
+* run php artisan key:generate
