@@ -98,7 +98,7 @@
                             </tr>
                             @endforeach
                             @else
-                            <td class="text-center" colspan="6">No records found.</td>
+                            <td class="text-center" style="color:red;" colspan="9">No records found.</td>
                             @endif
                         </tbody>
 
